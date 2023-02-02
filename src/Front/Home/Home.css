@@ -1,0 +1,106 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  background-color: #f5ebe1;
+}
+.home-presentation {
+  margin: 4rem auto;
+  position: relative;
+}
+.home-presentation::after {
+  content: url("../../../public/assets/no-preservatives.png");
+  position: absolute;
+  bottom: -2.6rem;
+  left: 1.3rem;
+  margin: 2rem;
+}
+.home-presentation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.home-presentation-text h1 {
+  color: #7e6a54;
+  margin-top: 10rem;
+  font-size: 6rem;
+  font-family: "Italiana", serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.home-presentation-text p {
+  text-align: center;
+  color: #ad977f;
+  font-size: 2.4rem;
+  font-family: "Dancing Script", cursive;
+}
+.home-description {
+  margin: 1rem 2rem;
+  padding: 0 5rem;
+}
+.home-image {
+  height: 90vh;
+  background-image: url("../../../public/assets/56201640cac2afdd9daa79f71d5dfc10.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+}
+.shop-button {
+  margin: 4rem;
+  padding: 1rem 2rem;
+  background-color: #ad977f;
+  border: none;
+  color: #fff;
+  font-family: "Italiana", serif;
+  /* font-weight: 600; */
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 1s linear;
+}
+.shop-button:hover {
+  background: rgb(173, 151, 127);
+  background: linear-gradient(
+    90deg,
+    rgba(173, 151, 127, 1) 0%,
+    rgba(245, 221, 193, 1) 82%
+  );
+  padding: 1rem 3rem;
+}
+
+/* 832px */
+@media (max-width: 52em) {
+  .home-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .home-presentation {
+    height: 60vh;
+  }
+  .home-image {
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+}
+/* 480px */
+@media (max-width: 30em) {
+  .home-presentation::after {
+    transform: scale(0.6);
+    top: 74%;
+    left: 67%;
+  }
+  .home-image {
+    height: 60vh;
+  }
+}
+/* 380px */
+@media (max-width: 23.75em) {
+  .home-presentation-text h1 {
+    margin-top: 3rem;
+  }
+  .home-presentation::after {
+    left: 54%;
+  }
+}
