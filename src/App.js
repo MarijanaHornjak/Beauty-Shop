@@ -21,7 +21,7 @@ function App() {
     if (ProductExist) {
       setCartItems(
         cartItems.map((item) => {
-          item.id === product.id
+          return item.id === product.id
             ? { ...ProductExist, quantity: ProductExist.quantity + 1 }
             : item;
         })
