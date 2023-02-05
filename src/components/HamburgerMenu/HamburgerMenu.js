@@ -16,6 +16,11 @@ const HamburgerMenu = ({ closeMenuHandler }) => {
             Products
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/contact" onClick={closeMenuHandler}>
+            Contact
+          </NavLink>
+        </li>
 
         <li>
           <NavLink to="/cart" onClick={closeMenuHandler}>
