@@ -99,7 +99,7 @@ form textarea {
     font-size: 1.8rem;
   }
 }
-/* 4px */
+/* 400px */
 @media (max-width: 25em) {
   .contact {
     padding: 2rem;

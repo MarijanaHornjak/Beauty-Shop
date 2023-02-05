@@ -1,4 +1,5 @@
 import React from "react";
+import Map from "../Map/Map";
 import "./Contact.css";
 
 const Contact = () => {
@@ -38,6 +39,7 @@ const Contact = () => {
           Send
         </button>
       </div>
+      <Map />
     </section>
   );
 };
