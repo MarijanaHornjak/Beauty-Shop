@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
 import data from "./Back/Data/Data";
-import HamburgerMenu from "./Front/HamburgerMenu/HamburgerMenu";
-import Header from "./Front/Header/Header";
-import AllRoutes from "./Front/Routes/AllRoutes";
+import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
+import Header from "./components/Header/Header";
+import AllRoutes from "./components/Routes/AllRoutes";
 
 function App() {
   const { products } = data;
@@ -20,11 +20,11 @@ function App() {
     const ProductExist = cartItems.find((item) => item.id === product.id);
     if (ProductExist) {
       setCartItems(
-        cartItems.map((item) =>
+        cartItems.map((item) => {
           item.id === product.id
             ? { ...ProductExist, quantity: ProductExist.quantity + 1 }
-            : item
-        )
+            : item;
+        })
       );
     } else {
       setCartItems([...cartItems, { ...product, quantity: 1 }]);

@@ -1,5 +1,6 @@
 import React from "react";
 import Products from "../Products/Products";
+import Contact from "../Contact/Contact";
 import Home from "../Home/Home";
 import Cart from "../Cart/Cart";
 import { Route, Routes } from "react-router-dom";
@@ -22,6 +23,7 @@ const AllRoutes = ({
             <Products products={products} handleAddProduct={handleAddProduct} />
           }
         />
+        <Route path="/contact" exact element={<Contact />} />
 
         <Route
           path="/cart"

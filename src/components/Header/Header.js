@@ -24,21 +24,28 @@ const Header = ({ openMenuHandler, menuIsOpen, cartItems }) => {
               Products
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/contact" className="nav-products">
+              Contact
+            </NavLink>
+          </li>
 
           <li>
             <NavLink to="/cart" className="cart">
-              <span className="material-symbols-outlined">shopping_cart</span>
+              <span className="material-symbols-outlined cart-icon">
+                shopping_cart
+              </span>
               <span className="cart-number">
-                <sup> {cartItems.lenght === 0 ? "" : cartItems.length} </sup>
+                <sup>{cartItems.length === 0 ? "" : cartItems.length}</sup>
               </span>
             </NavLink>
           </li>
           <li>
             <button className="menu-button" onClick={openMenuHandler}>
               {menuIsOpen ? (
-                <span class="material-symbols-outlined">close</span>
+                <span class="material-symbols-outlined menu-icon">close</span>
               ) : (
-                <span class="material-symbols-outlined">menu</span>
+                <span class="material-symbols-outlined menu-icon">menu</span>
               )}
             </button>
           </li>

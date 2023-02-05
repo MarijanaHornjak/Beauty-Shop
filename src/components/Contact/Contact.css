@@ -1,0 +1,111 @@
+.contact {
+  margin: 5rem auto;
+  width: 70%;
+  background-color: #f5ebe1;
+  padding: 4rem;
+}
+.contact-details {
+  margin: 2rem auto;
+  width: 80%;
+  padding: 2rem;
+  background-color: #e9d6c1;
+}
+.contact-mobile,
+.contact-location,
+.contact-email {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.contact-icon {
+  font-size: 4rem;
+  color: #7e6a54;
+}
+.contact-info {
+  font-size: 2rem;
+  color: #7e6a54;
+  margin-left: 1rem;
+}
+.contact-send-message {
+  margin: 2rem auto;
+  width: 80%;
+  background-color: #e9d6c1;
+  padding: 2rem;
+}
+.contact-send-message h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #7e6a54;
+  margin-bottom: 2rem;
+  font-family: "Italiana", serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  color: #7e6a54;
+  font-family: "Italiana", serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+form input {
+  width: 40%;
+  padding: 0.5rem;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+form textarea {
+  border: none;
+  padding: 1rem;
+}
+.contact-button {
+  background-color: #c0ac95;
+  color: #fff;
+  font-family: "Italiana", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.contact-button:hover,
+.contact-button:active {
+  background-color: #7e6a54;
+}
+/* 700px */
+@media (max-width: 43.75em) {
+  .contact {
+    padding: 3rem;
+    width: 90%;
+  }
+  .contact-details,
+  .contact-send-message {
+    width: 90%;
+  }
+  form input {
+    width: 50%;
+  }
+}
+/* 500px */
+@media (max-width: 31.25em) {
+  .contact-icon {
+    font-size: 3rem;
+  }
+  .contact-info {
+    font-size: 1.8rem;
+  }
+}
+/* 4px */
+@media (max-width: 25em) {
+  .contact {
+    padding: 2rem;
+  }
+  .contact-details,
+  .contact-send-message {
+    width: 100%;
+  }
+}

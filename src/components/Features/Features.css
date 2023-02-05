@@ -1,0 +1,42 @@
+.features {
+  margin: 5rem auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+.feature {
+  background-color: #f5ebe1;
+  padding: 2rem;
+}
+.feature h2 {
+  color: #7e6a54;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.feature p {
+  font-size: 1.4rem;
+  color: #7e6a54;
+  line-height: 2rem;
+}
+.feature-icon {
+  color: #7e6a54;
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+/* 1060px */
+@media (max-width: 66.25em) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 560px */
+@media (max-width: 35em) {
+  .features {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
