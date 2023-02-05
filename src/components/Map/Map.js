@@ -3,9 +3,10 @@ import "./Map.css";
 
 const Map = () => {
   return (
-    <div className="map">
+    <section className="map">
       <h2>Location</h2>
       <iframe
+        title="location"
         width="100%"
         height="100%"
         id="gmap_canvas"
@@ -15,7 +16,7 @@ const Map = () => {
         marginheight="0"
         marginwidth="0"
       ></iframe>
-    </div>
+    </section>
   );
 };
 

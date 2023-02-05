@@ -2,6 +2,7 @@
   margin: 3rem auto;
   width: 70%;
   background-color: #dfcfbe;
+  height: 90vh;
 }
 .cart-items-header {
   display: flex;

@@ -3,6 +3,7 @@ import "./App.css";
 import data from "./Back/Data/Data";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import AllRoutes from "./components/Routes/AllRoutes";
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
         handleRemoveProduct={handleRemoveProduct}
         handleClearCart={handleClearCart}
       />
+      <Footer />
     </div>
   );
 }
