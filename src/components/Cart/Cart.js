@@ -26,7 +26,7 @@ const Cart = ({
       )}
       <div>
         {cartItems.map((item) => (
-          <div key={item.id} className="cart-items-list">
+          <div className="cart-items-list">
             <img className="cart-items-img" src={item.image} alt={item.name} />
             <div className="cart-items-name">{item.name}</div>
             <div className="cart-items-function">
