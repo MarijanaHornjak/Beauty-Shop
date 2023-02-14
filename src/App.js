@@ -48,6 +48,7 @@ function App() {
   const handleClearCart = () => {
     setCartItems([]);
   };
+  console.log(cartItems.length);
   return (
     <div>
       <Header

@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Header.css";
 
-const Header = ({ openMenuHandler, menuIsOpen, cartItems, item }) => {
+const Header = ({ openMenuHandler, menuIsOpen, cartItems }) => {
   return (
     <header className="header">
       <div>
